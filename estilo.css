@@ -1,0 +1,145 @@
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    color: #301108;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px #301108;
+}
+
+header #logo {
+    margin-left: 130px;
+}
+
+header ul {
+    display: flex;
+    margin-right: 120px;
+}
+
+header ul li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header ul li:hover {
+    background-color: antiquewhite;
+    transition: 300ms;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./backgroung2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center fixed;
+    /* background: linear-gradient(90deg, cod da cor1 do gradiente, cod da cor2do gradiente); */
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.container .name h2 {
+    font-size: 20px;
+}
+
+.container #leaf {
+    font-size: 30px;
+    margin: 15px;
+    /* animation: blink 1s steps(5,start) infinite; */
+}
+
+/* @keyframes blink {
+    to {visibility: hidden;
+    }
+} */
+
+.container #about p {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.container #destaque h1 {
+    text-align: left;
+    margin-left: 140px;
+    margin-bottom: 30px;
+}
+
+.container .form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.container .form input{
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.container .form button {
+    width: 15%;
+    background-color: darkkhaki;
+    color: #301108;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: -5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.container .form button:hover {
+    background-color: #301108;
+    color: antiquewhite;
+    cursor: pointer;
+    transition: 300ms;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex div {
+    border: 4px solid #301108;
+    margin: 15px;
+    background-color: antiquewhite;
+}
+
+.flex img {
+    max-width: 250px;
+}
+
+.flex p {
+    width: 250px;
+    padding: 20px;
+}
