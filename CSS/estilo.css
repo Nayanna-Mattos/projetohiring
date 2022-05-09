@@ -9,13 +9,15 @@
 header {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     padding: 10px;
+    margin: 0 auto;
     box-shadow: 1px 1px 10px 1px #301108;
 }
 
 header #logo {
     margin-left: 130px;
+    width: 15%;
 }
 
 header ul {
@@ -24,14 +26,16 @@ header ul {
 }
 
 header ul li {
-    padding: 10px;
+    padding: 10px 15px;
     display: flex;
     align-items: center;
+    transition: 300ms;
+    border-radius: 20px;
+    margin: 0px 5px;
 }
 
 header ul li:hover {
-    background-color: antiquewhite;
-    transition: 300ms;
+    background-color: rgb(212, 209, 156);
 }
 
 ul {
@@ -45,10 +49,8 @@ a {
 }
 
 body {
-    background-image: url(./backgroung2.jpg);
-    background-repeat: no-repeat;
+    background: url(../Imagens/backgroung2.jpg), no-repeat, center center fixed;
     background-size: cover;
-    background-position: center center fixed;
     /* background: linear-gradient(90deg, cod da cor1 do gradiente, cod da cor2do gradiente); */
 }
 
@@ -65,27 +67,47 @@ body {
     font-size: 20px;
 }
 
-.container #leaf {
+#leaf i{
     font-size: 30px;
     margin: 15px;
-    /* animation: blink 1s steps(5,start) infinite; */
+    /* cursor: pointer;
+    animation: blink 1s steps(5,start) infinite; */
 }
 
 /* @keyframes blink {
-    to {visibility: hidden;
-    }
+    to {visibility: hidden;}
 } */
 
-.container #about p {
+#about p {
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 50px;
 }
 
-.container #destaque h1 {
+#destaque h1 {
     text-align: left;
     margin-left: 140px;
     margin-bottom: 30px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex div {
+    border: 4px solid #301108;
+    margin: 15px;
+    background-color: antiquewhite;
+}
+
+.flex img {
+    max-width: 250px;
+}
+
+.flex p {
+    width: 250px;
+    padding: 20px;
 }
 
 .container .form {
@@ -94,7 +116,7 @@ body {
     margin-top: 30px;
 }
 
-.container .form input{
+.container .form input {
     width: 50%;
     padding: 5px 10px;
     border: none;
@@ -122,24 +144,4 @@ body {
     transition: 300ms;
     border: none;
     border-radius: 0px 10px 10px 0px;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.flex div {
-    border: 4px solid #301108;
-    margin: 15px;
-    background-color: antiquewhite;
-}
-
-.flex img {
-    max-width: 250px;
-}
-
-.flex p {
-    width: 250px;
-    padding: 20px;
 }
